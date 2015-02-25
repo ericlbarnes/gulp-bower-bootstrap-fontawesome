@@ -1,0 +1,20 @@
+{
+  "name": "gulp-bower-bootstrap-fontawesome",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ericbarnes/gulp-bower-bootstrap-fontawesome",
+  "authors": [
+    "Eric Barnes <eric@ericlbarnes.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.3",
+    "fontawesome": "~4.3.0"
+  }
+}
