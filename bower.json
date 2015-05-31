@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "homepage": "https://github.com/ericbarnes/gulp-bower-bootstrap-fontawesome",
   "authors": [
-    "Eric Barnes <eric@ericlbarnes.com>"
+    "Eric Barnes <eric@ericlbarnes.com>",
+    "Tommy Derngren <tommy@reseguiden.se>"
   ],
   "license": "MIT",
   "ignore": [
@@ -14,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass-official": "~3.3.3",
+    "bootstrap-sass-official": "~3.3.4",
     "fontawesome": "~4.3.0"
   }
 }
