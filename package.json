@@ -3,6 +3,6 @@
     "gulp": "^3.8.11",
     "gulp-bower": "0.0.10",
     "gulp-notify": "^2.2.0",
-    "gulp-ruby-sass": "^0.7.1"
+    "gulp-ruby-sass": "^1.0.5"
   }
 }

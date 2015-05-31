@@ -19,18 +19,16 @@ gulp.task('icons', function() {
 });
 
 gulp.task('css', function() {
-    return gulp.src(config.sassPath + '/style.scss')
-        .pipe(sass({
-            style: 'compressed',
-            loadPath: [
-                './resources/sass',
+    return sass('./resources/sass', {
+            style:'compressed',
+            loadPath:[
                 config.bowerDir + '/bootstrap-sass-official/assets/stylesheets',
-                config.bowerDir + '/fontawesome/scss',
+                config.bowerDir + '/fontawesome/scss'
             ]
         })
-            .on("error", notify.onError(function (error) {
-                return "Error: " + error.message;
-            })))
+        .on("error", notify.onError(function (error) {
+            return "Error: " + error.message;
+        }))
         .pipe(gulp.dest('./public/css'));
 });
 
