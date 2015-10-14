@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
+    sass = require('gulp-ruby-sass'),
     notify = require("gulp-notify"),
     bower = require('gulp-bower');
 
@@ -18,13 +18,28 @@ gulp.task('icons', function() {
         .pipe(gulp.dest('./public/fonts'));
 });
 
-gulp.task('css', function() {
-    return gulp.src(config.sassPath + '/style.scss')
-        .pipe(sass()
-            .on("error", notify.onError(function (error) {
-                return "Error: " + error.message;
-            })))
-        .pipe(gulp.dest('./public/css'));
+gulp.task('css', function () {
+    return sass(config.sassPath + '/style.scss', {
+        precision: 6,
+        stopOnError: true,
+        cacheLocation: './',
+        loadPath: [
+            './resources/sass',
+        config.bowerDir + '/bootstrap-sass/assets/stylesheets',
+        config.bowerDir + '/font-awesome/scss', ]
+    })
+    
+    /*return gulp.src(config.sassPath + '/style.scss')
+        .pipe(sass({
+        loadPath: [
+            './resources/sass',
+        config.bowerDir + '/bootstrap-sass/assets/stylesheets',
+        config.bowerDir + '/font-awesome/scss', ]
+    })*/
+    .on("error", notify.onError(function (error) {
+        return "Error: " + error.message;
+    }))
+    .pipe(gulp.dest('./public/css'));
 });
 
 // Rerun the task when a file changes
