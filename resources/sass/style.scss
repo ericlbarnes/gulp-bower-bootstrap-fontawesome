@@ -3,8 +3,8 @@
 $font-family-base: 'Raleway', sans-serif;
 
 // Import bootstrap and fontawesome
-@import "bootstrap";
-@import "font-awesome";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/fontawesome/scss/font-awesome";
 
 // Bootstrap Starter Template Styles
 body {
