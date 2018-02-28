@@ -1,4 +1,4 @@
-# Setting up Gulp, Bower, Bootstrap Sass, & FontAwesome
+# Setting up Gulp, Bower, Bootstrap Sass, FontAwesome & Browsersync
 
 This is a demo repo for the tutorial [Setting up Gulp, Bower, Bootstrap Sass, & FontAwesome](http://ericlbarnes.com/setting-gulp-bower-bootstrap-sass-fontawesome/).
 
